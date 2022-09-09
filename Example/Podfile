@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'ZZWTool_Example' do
+  pod 'ZZWTool', :path => '../'
+
+  target 'ZZWTool_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
