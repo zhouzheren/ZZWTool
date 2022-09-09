@@ -1,0 +1,22 @@
+{
+  "name": "ZZWTool",
+  "version": "0.1.0",
+  "summary": "A short description of ZZWTool.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/a595429717@163.com/ZZWTool",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "a595429717@163.com": "a595429717@163.com"
+  },
+  "source": {
+    "git": "https://github.com/a595429717@163.com/ZZWTool.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ZZWTool/Classes/**/*"
+}
