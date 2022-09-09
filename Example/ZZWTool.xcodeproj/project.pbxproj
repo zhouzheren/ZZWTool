@@ -62,11 +62,11 @@
 		7CB2D07D5C2B2D22E1569B17 /* Pods_ZZWTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZZWTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		967D8FAD5EE3328F0DC0DD1E /* Pods-ZZWTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZWTool_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZZWTool_Tests/Pods-ZZWTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A394C0B5A847CBE8B833EF2D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A394C0B5A847CBE8B833EF2D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B351C5B295BDC80CA16922A9 /* Pods-ZZWTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZWTool_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZZWTool_Example/Pods-ZZWTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B57B7A94A29F683F6DBB5866 /* Pods_ZZWTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZZWTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C969F5665A06FF86C11D2321 /* ZZWTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZWTool.podspec; path = ../ZZWTool.podspec; sourceTree = "<group>"; };
-		CCC62FA754D6699E9552BC7C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C969F5665A06FF86C11D2321 /* ZZWTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZZWTool.podspec; path = ../ZZWTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CCC62FA754D6699E9552BC7C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				967D8FAD5EE3328F0DC0DD1E /* Pods-ZZWTool_Tests.debug.xcconfig */,
 				2249F4FA0991E086E5EABCD2 /* Pods-ZZWTool_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
