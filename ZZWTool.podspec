@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZZWTool' #库的名字
-  s.version          = '0.1.0' #版本号，当私有库需要更新的时候只要修改这个值
-  s.summary          = '基于第三方库的一些封装类' #库的简介，pod search 显示在上面的介绍
+  s.version          = '0.1.1' #版本号，当私有库需要更新的时候只要修改这个值
+  s.summary          = '常用工具类和方法集合' #库的简介，pod search 显示在上面的介绍
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = '基于第三方库的一些封装类,例如AFNetWorking' #库的详细描述
+  s.description      = '平时开发中常用的一些方法集合' #库的详细描述
 
 
   s.homepage         = 'https://github.com/zhouzheren/ZZWTool' #主页地址，pod search 会显示，一般填写仓库的地址就行了
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/zhouzheren/ZZWTool.git', :tag => s.version.to_s }  #资源地址，pod install 的时候会根据这个地址去下载你的想要库，以及下载的版本，必须要跟s.version一致。
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0' #库最低支持的系统版本
+  s.ios.deployment_target = '9.0' #库最低支持的系统版本
 
   s.source_files = 'ZZWTool/Classes/**/*' #这个很重要，指定资源文件，前缀就是 .podspec 文件当前路径，只用写之后的路径，如 Classes/* 是指 Classes 文件夹下的所有文件，但不包括子文件夹里面的文件、Classes/**/* 是指包含所有 Classes 文件夹下的文件，包括子文件、Classes/**/*.{h,m} 是指包含所有 Classes 文件夹下的后缀为 .h 和 .m 的文件，也可以指定文件。
   

@@ -7,7 +7,7 @@
 //
 
 #import "ZZWViewController.h"
-
+#import "ZZWTool.h"
 @interface ZZWViewController ()
 
 @end
@@ -18,6 +18,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSInteger count = [ZZWTool getNumberFromString:@"ab234d31"];
+    NSLog(@"%ld",count);
 }
 
 - (void)didReceiveMemoryWarning
