@@ -1,5 +1,125 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
+
+
+#define DefaultMargin 16
+#define CornerRadios8 8
+#define mainColor  @"#00CCFF"
+#define ClearColor [UIColor clearColor]
+#define WhiteColor [UIColor colorWithHexString:@"#FFFFFF"]
+#define DefaultGray [UIColor colorWithHexString:@"#9DA8C1"]
+#define MainColor [UIColor colorWithHexString:@"#15213B"]
+#define ButtonUnSelectColor [UIColor colorWithHexString:@"#6E6E6E"]
+#define ButtonCanSelectColor [UIColor colorWithHexString:@"#3D91DA"]
+#define DefaultBgColor @"#f2f2f2"
+#define DefaultButtonColor [UIColor colorWithRed:64/255.0f green:204/255.0f blue:130/255.0f alpha:1]
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+#define HBRGB(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define HBRandomColor HBRGB(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256)) //随机色
+
+#define RGBCOLOR_HEX(hexColor) [UIColor colorWithRed: (((hexColor >> 16) & 0xFF))/255.0f         \
+green: (((hexColor >> 8) & 0xFF))/255.0f          \
+blue: ((hexColor & 0xFF))/255.0f                 \
+alpha: 1]
+#define GRAYTEXTCOLOR RGBCOLOR_HEX(0x7b7b7b)
+#define ButtonNormalColor RGBCOLOR_HEX(0x67d2ca)
+static NSString *message = @"msg";
+#define HudDuration 0.75
+
+#define kScreenWidth    UIScreen.mainScreen.bounds.size.width
+#define kScreenHeight   UIScreen.mainScreen.bounds.size.height
+#define kScreenScale    kScreenWidth / 375
+
+#define kIs_iPhone      (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone)
+#define kIs_iPhoneX     (kScreenWidth >= 375.0f && kScreenHeight >= 812.0f && kIs_iPhone)
+/*状态栏高度*/
+#define kStatusBarHeight    (kIs_iPhoneX ? 44.0 : 20.0)
+/*导航栏高度*/
+#define kNavBarHeight       (44.0)
+/*状态栏和导航栏总高度*/
+#define kNavAndStatusBarHeight  (kStatusBarHeight + kNavBarHeight)
+/*TabBar高度*/
+#define kTabBarHeight       (kIs_iPhoneX ? (49.0 + 34.0) : 49.0)
+/*导航条和Tabbar总高度*/
+#define kNavAndTabHeight    (kNavAndStatusBarHeight + kTabBarHeight)
+
+#define WeakSelf(weakSelf) __weak typeof(self) weakSelf = self;
+
+/*顶部安全区域远离高度*/
+#define kTopBarSafeHeight   (kIs_iPhoneX ? 44.0 : 0)
+/*底部安全区域远离高度*/
+#define kBottomSafeHeight   (kIs_iPhoneX ? 34.0 : 0)
+/*iPhoneX的状态栏高度差值*/
+#define kTopBarDifHeight    (kIs_iPhoneX ? 24.0 : 0)
+#define ScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define ScreenHeight ([UIScreen mainScreen].bounds.size.height)
+
+#define FontSize10 [UIFont systemFontOfSize:10]
+#define FontSize12 [UIFont systemFontOfSize:12]
+#define FontSize14 [UIFont systemFontOfSize:14]
+#define FontSize16 [UIFont systemFontOfSize:16]
+
+
+#define botellaInfo_context @"context"
+#define botellaInfo_imgIds @"imgIds"
+#define botellaInfo_videoIds @"videoIds"
+#define botellaInfo_audioIds @"audioIds"
+#define botellaInfo_lng @"lng"
+#define botellaInfo_lat @"lat"
+#define botellaInfo_city @"city"
+#define botellaInfo_address @"address"
+
+#define userInfoPath @"UserInfo"
+#define userInfo_userName @"userName"
+#define userInfo_headImg @"headImg"
+#define userInfo_birthday @"birthday"
+#define userInfo_height @"height"
+#define userInfo_weight @"weight"
+#define userInfo_role @"role"
+#define userInfo_school @"school"
+#define userInfo_education @"education"
+#define kData @"data"
+#define kTitle @"title"
+#define kCode @"code"
+#define kAppId @"iosJvBa1rEUUYexzLrL"
+
+
+#define notification_logout @"notification_logout"
+
+
+// 判断是否为刘海屏
+#define kIPHONE_X \
+({BOOL isPhoneX = NO;\
+if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {\
+    isPhoneX = NO;\
+}\
+CGSize size = [UIScreen mainScreen].bounds.size;\
+NSInteger notchValue = size.width / size.height * 100;\
+if (216 == notchValue || 46 == notchValue) {\
+    isPhoneX = YES;\
+}\
+(isPhoneX);})
+// 非安全区域头部高度
+#define kTopUnSafeAreaHeight ({(kIPHONE_X) ? 40.0f : 20.0f;})
+// 非安全区域底部高度
+#define kBottomUnSafeAreaHeight ({(kIPHONE_X) ? 34.0f : 0.0f;})
+// 导航栏交互区高度
+#define kNavigationBarHeight 44.0f
+
+#define kTabbarHeight 49.0f
+
+
+#ifdef DEBUG // 处于开发阶段
+#define HBLog(...) NSLog(__VA_ARGS__)
+#else // 出去发布阶段
+#define HBLog(...)
+#endif
+
+
+
+
+
 #else
 #ifndef FOUNDATION_EXPORT
 #if defined(__cplusplus)
