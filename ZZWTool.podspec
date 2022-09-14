@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZZWTool' #库的名字
-  s.version          = '0.1.2' #版本号，当私有库需要更新的时候只要修改这个值
+  s.version          = '0.1.3' #版本号，当私有库需要更新的时候只要修改这个值
   s.summary          = '常用工具类和方法集合' #库的简介，pod search 显示在上面的介绍
 
 # This description is used to generate tags and improve search results.
@@ -38,6 +38,10 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h' #公开的头文件，如果没有公开，用户在用的时候可能引不到响应的头文件
   # s.frameworks = 'UIKit', 'MapKit' #需要依赖的框架
   # s.dependency 'AFNetworking', '~> 2.3' #需要依赖的三方库
+  
+  s.prefix_header_file = false
+  s.prefix_header_file = 'ZZWTool/Classes/Define.pch'
+  
 end
 
 #这个是子依赖库，如果我们只是用 s.source_files 来指定文件，那么用户在 pod 下来之后所有的文件都在同一个目录下，没有子文件夹，如果想要分类，用 s.subspec，每一个 subspec 可以分一个子文件夹，但是记得一定要将 .h 文件通过 ss.public_header_files 公开，不然有可能会找不到头文件。
@@ -45,4 +49,6 @@ end
 # s.subspec 'subFolder' do |ss|
 #     ss.source_files = 'Classes/xxx/**/*.{h,m}'
 #    ss.public_header_files = "Classes/xxx/**/*.{h}"
+
+
 # end

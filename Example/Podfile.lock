@@ -1,5 +1,5 @@
 PODS:
-  - ZZWTool (0.1.0)
+  - ZZWTool (0.1.3)
 
 DEPENDENCIES:
   - ZZWTool (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZZWTool: d86cb95c7572af276c8e6249bdb2e90e91d8f33d
+  ZZWTool: 4dfd4faa6990c12d306aa4300f578064912bad42
 
 PODFILE CHECKSUM: 226f2f704c8b5a4cb9484228fa534b505ef7f6a3
 
